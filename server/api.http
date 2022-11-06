@@ -1,0 +1,18 @@
+POST http://localhost:3333/pools
+Content-Type: application/json
+
+{
+  "title": "Bolão do Rafa"
+}
+
+###
+
+GET http://localhost:3333/users/count
+
+###
+
+GET http://localhost:3333/pools/count
+
+###
+
+GET http://localhost:3333/guesses/count
