@@ -1,8 +1,9 @@
 POST http://localhost:3333/pools
 Content-Type: application/json
+Authorization: Bearer yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFmYWVsIFJpY2NpYXJkaSIsImF2YXRhclVSTCI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FMbTV3dTBLY0loeExmNkNFeDNpM3lFZEpyQjNrR1ZfMmNIYlNBb3dWYVZYPXM5Ni1jIiwic3ViIjoiY2xhYWxnN2owMDAwMGZrZDNjcmN2dnFlbSIsImlhdCI6MTY2ODA1NjMzNSwiZXhwIjoxNjY4NjYxMTM1fQ.E5h8UrZWZj3u8d_gA_1BGME_HzCRHPjDDFFJhSCo8ig
 
 {
-  "title": "Bolão do Rafa"
+  "title": "Bolão com dono"
 }
 
 ###
@@ -16,3 +17,17 @@ GET http://localhost:3333/pools/count
 ###
 
 GET http://localhost:3333/guesses/count
+
+###
+
+POST http://localhost:3333/users
+Content-Type: application/json
+
+{
+  "access_token": "ya29.a0AeTM1icof3j7VHBXD4v65GfcrxVhUqlrb7Is4h0XQ2JGcK7iUkbgXZOg-5odZ7Og9Wh-RZQF_VtVGoDUvkKyURuk1YpFNobirj_82Kw9nS9P-CGGmgP9sXYB7_pZsVxK9TBtJIlSoEq5KoMXE3Dgj_xEM-LEjQaCgYKAb0SARASFQHWtWOm9fTJIioKFQ7kyPsuuNq2ig0165"
+}
+
+###
+
+GET http://localhost:3333/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFmYWVsIFJpY2NpYXJkaSIsImF2YXRhclVSTCI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FMbTV3dTBLY0loeExmNkNFeDNpM3lFZEpyQjNrR1ZfMmNIYlNBb3dWYVZYPXM5Ni1jIiwic3ViIjoiY2xhYWxnN2owMDAwMGZrZDNjcmN2dnFlbSIsImlhdCI6MTY2ODA1NjMzNSwiZXhwIjoxNjY4NjYxMTM1fQ.E5h8UrZWZj3u8d_gA_1BGME_HzCRHPjDDFFJhSCo8ig
